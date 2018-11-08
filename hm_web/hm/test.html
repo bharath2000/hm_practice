@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+	<meta charset="utf-8">
+	<title>Hanumart</title>
+	<link rel="stylesheet" type="text/css" href="./test.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<!--script src="./angular.min.js"></script-->
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+</head>
+<body >
+	<div class="outer_div" >
+		<!-- <div class="navbar_wrapper">
+			NAVBAR
+		</div> -->
+		
+		<div class="main_wrapper">
+			<div class="vertical_sidebar_wrapper">
+				<div class="vertical_sidebar_icon_wrapper">Message</div>
+				<div class="vertical_sidebar_icon_wrapper">Chat</div>
+				<div class="vertical_sidebar_icon_wrapper">Profile</div>
+				<div class="vertical_sidebar_icon_wrapper">Prefernces</div>
+				<div class="vertical_sidebar_icon_wrapper">Share</div>
+				<div class="vertical_sidebar_icon_wrapper">Send</div>
+				<div class="vertical_sidebar_icon_wrapper">Logout</div>
+			</div>
+			<div class="main_shopping_body">
+				<div class="ad_section_wrapper"> 
+				  	<div id="myCarousel" class="carousel slide my_carousel_class" data-ride="carousel">
+					    
+					    <ol class="carousel-indicators">
+					      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					      <li data-target="#myCarousel" data-slide-to="1"></li>
+					      <li data-target="#myCarousel" data-slide-to="2"></li>
+					    </ol>
+
+					    <div class="carousel-inner my_carousel-inner_class">
+					      <div class="item active my_item">
+					        <img src="./images/1200px-Sunset_on_Reunion_Island.jpg" class="ad_img">
+					      </div>
+
+					      <div class="item my_item">
+					        <img src="./images/1200px-Sunset_on_Reunion_Island.jpg" class="ad_img">
+					      </div>
+					    
+					    <div class="item my_item">
+					        <img src="./images/1200px-Sunset_on_Reunion_Island.jpg" class="ad_img">
+					      </div>
+					    </div>
+					</div>
+				</div>
+				<div class="shopping_board_wrapper">
+					<div class="shopping_upper_wrapper" >
+						<div ng-view=""></div>
+						<div class="anchor_vertical_wrapper">
+							<div class="anchor_vertical_options system_block">CART</div>
+							<div class="anchor_vertical_options system_block">WALLET</div>
+							<div class="anchor_vertical_options system_block">SHARE</div>
+						</div>	
+					</div>
+					<div class="shopping_lower_wrapper">
+						<div class="anchor_horizontal_wrapper">
+							<div class="anchor_horizontal_options system_block"><a href="#">LEFT</a></div>
+							<div class="anchor_horizontal_options system_block"><a href="#!home">HOME</a></div>
+							<div class="anchor_horizontal_options system_block">RIGHT</div>
+							<div class="anchor_horizontal_options system_block">HOT DEALS</div>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-database.js"></script>
+	<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyA4en1Yb9wFdhuub_RMBQWidy7wbNXqM8c",
+		    authDomain: "loginpage-4cbcf.firebaseapp.com",
+		    databaseURL: "https://loginpage-4cbcf.firebaseio.com",
+		    projectId: "loginpage-4cbcf",
+		    storageBucket: "loginpage-4cbcf.appspot.com",
+		    messagingSenderId: "692098127133"
+		  };
+		  firebase.initializeApp(config);
+	</script>
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>	
+	<script type="text/javascript" src="./test.js"></script>
+	<script type="text/javascript" src="./testmain.js"></script>
+	
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="./test.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/> 
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+</head>
+<body ng-app="myapp">
+	
+		<div class="main_shopping_block" ng-controller="maincontroller">
+			<div class="main_shopping_block_row main_shopping_block_row1">
+				<div class="main_shopping_block_col main_shopping_block_col1 system_block" ng-click="fun(0)" ></div>
+				<div class="main_shopping_block_col main_shopping_block_col2 system_block" ng-click="fun(1)">2</div>
+				<div class="main_shopping_block_col main_shopping_block_col3 system_block" ng-click="fun(2)">3</div>
+			</div>
+			<div class="main_shopping_block_row main_shopping_block_row2">
+				<div class="main_shopping_block_col main_shopping_block_col1 system_block"  ng-click="fun(3)"></div>
+				<div class="main_shopping_block_col main_shopping_block_col2 system_block" ng-click="fun(4)"></div>
+				<div class="main_shopping_block_col main_shopping_block_col3 system_block" ng-click="fun(5)"></div>
+			</div>
+			<div class="main_shopping_block_row main_shopping_block_row3">
+				<div class="main_shopping_block_col main_shopping_block_col1 system_block"  ng-click="fun(6)"></div>
+				<div class="main_shopping_block_col main_shopping_block_col2 system_block" ng-click="fun(7)"></div>
+				<div class="main_shopping_block_col main_shopping_block_col3 system_block" ng-click="fun(8)"></div>
+			</div>
+		</div>
+	
+	
+	<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-database.js"></script>
+	<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyA4en1Yb9wFdhuub_RMBQWidy7wbNXqM8c",
+		    authDomain: "loginpage-4cbcf.firebaseapp.com",
+		    databaseURL: "https://loginpage-4cbcf.firebaseio.com",
+		    projectId: "loginpage-4cbcf",
+		    storageBucket: "loginpage-4cbcf.appspot.com",
+		    messagingSenderId: "692098127133"
+		  };
+		  firebase.initializeApp(config);
+	</script>
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>	
+	<script type="text/javascript" src="./testmain.js"></script>
+</body>
+</html>
